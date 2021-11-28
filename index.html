@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Odin recipes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: rgb(233, 233, 233);
+            color: rgb(20, 20, 20);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .recipes-list {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .recipe-img {
+            float: left;
+            width: 300px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 5px;
+            padding-left: 20px;
+            filter: brightness(80%);
+            border: 1px transparent;
+            transition: all .3s ease-in;
+        }
+
+        .recipe-img:hover {
+            filter: brightness(100%);
+            border: 1px white;
+        }
+
+        .recipe {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Odin Recipes</h1>
+    <ul class="recipes-list">
+        <li>
+            <a href="recipes/turkeysalad.html"><img class="recipe-img"
+                    src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/exps13156__SD143206B04_03_3b.jpg"
+                    alt="Turkey Red Grape Salad"></a>
+            <p>Turkey Red Grape Salad</p>
+        </li>
+        <li>
+            <a href="recipes/spinachsalad.html"><img class="recipe-img"
+                    src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6691556.jpg&w=596&h=596&c=sc&poi=face&q=85"
+                    alt="Spinach salad"></a>
+            <p>Spinach salad</p>
+        </li>
+        <li>
+            <a href="recipes/lasagna.html"><img class="recipe-img"
+                    src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7609693.jpg&q=85"
+                    alt="Lasagna"></a>
+            <p>Lasagna</p>
+        </li>
+    </ul>
+
+</body>
+
+</html>
